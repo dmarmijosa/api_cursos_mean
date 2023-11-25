@@ -1,4 +1,4 @@
-import token from "../helps/token";
+import token from "../helpers/token";
 const verifyTienda = async (req, res, next) => {
   if (!req.headers.token) {
     res.status(404).send({

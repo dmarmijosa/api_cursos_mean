@@ -4,6 +4,7 @@ import auth from '../middlewares/auth'
 const router = routerx();
 
 router.post("/register", userController.register);
-router.post("/login",userController.login);
+router.post("/login_tienda",userController.login);
+router.post("/login_admin",userController.login_admin);
 
 export default router;
